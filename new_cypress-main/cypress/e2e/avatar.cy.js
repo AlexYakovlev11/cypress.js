@@ -2,8 +2,8 @@ describe('покупку нового аватара для своего тре�
 
     it('Путь пользователя по покупке нового аватара', function () {
          cy.visit('https://pokemonbattle.ru/');
-         cy.get(':nth-child(1) > .auth__input').type('aleksandr-y@bk.ru');
-         cy.get('#password').type('Sasha0712');
+         cy.get(':nth-child(1) > .auth__input').type('USER_LOGIN');
+         cy.get('#password').type('USER_PASSWORD');
          cy.get('.auth__button').click();
          cy.wait(2000);
          cy.get('.header__container > .header__id').click({force: true});
